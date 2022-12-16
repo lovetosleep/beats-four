@@ -1,0 +1,21 @@
+.headline {
+    text-align: center;
+}
+
+.headline__title {
+
+    @include phones {
+        font-size: rem(32px);
+    }
+}
+
+.headline__subtitle {
+    padding: 0 18%;
+    font-family: "Play";
+    margin-bottom: rem(57px);
+    color: $gray;
+
+    @include phones {
+        padding: 0 4%;
+    }
+}

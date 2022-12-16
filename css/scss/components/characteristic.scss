@@ -1,0 +1,96 @@
+.characteristic {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .characteristic__button {
+    width: rem(90px);
+    height: rem(90px);
+    background: #9A9A9A;
+    border-radius: rem(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  
+  .characteristic__button-icon {
+    margin-bottom: rem(6px);
+  }
+  
+  .characteristic__button-icon-elem {
+    fill: currentColor;
+    width: rem(91px);
+    height: rem(91px);
+    display: block;
+  }
+  
+  .characteristic__button-text {
+    line-height: 1;
+  }
+  
+  .characteristic {
+    &:hover {
+      .characteristic__button {
+        background: #6E6E6E;
+      }
+      .characteristic__dropdown {
+        left: 100%;
+        opacity: 1;
+      }
+    }
+  }
+  
+  .characteristic__dropdown {
+    color: #2f3234;
+    position: absolute;
+    left: rem(-9999px);
+    top: 0;
+    width: rem(270px);
+    background: rgba(255, 255, 255, .8);
+    border-radius: rem(5px);
+    padding: rem(26px) rem(12px) rem(26px) rem(35px);
+    transition: opacity .3s;
+    opacity: 0;
+  
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 50%;
+      width: rem(30px);
+      left: rem(-29px);
+    }
+  }
+  
+  .characteristic__table {
+    width: 100%;
+  }
+  
+  .characteristic__icon {
+    width: rem(35px);
+    height: rem(35px);
+  }
+  
+  .characteristic__table-row {
+    border-bottom: rem(5px) solid transparent;
+  
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  .characteristic__text-container {
+    padding-left: rem(10px);
+  }
+  
+  .characteristic__table-cell {
+    vertical-align: middle;
+  }
+  
+  .characteristic__text {
+    font-size: rem(16px);
+    font-weight: bold;
+  }

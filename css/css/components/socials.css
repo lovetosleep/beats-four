@@ -1,0 +1,26 @@
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: rem(20px);
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+}
+.socials__link:hover .socials__icon {
+  opacity: 1;
+}
+
+.socials__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #000;
+  opacity: 0.3;
+}

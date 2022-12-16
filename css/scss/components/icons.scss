@@ -1,0 +1,33 @@
+.icons {
+    display: flex;
+
+    @include tablets {
+        display: none;
+    }
+
+}
+
+.icons__list{
+  display: flex;
+}
+
+.icons__item {
+    margin-right: rem(8px);
+    width: rem(166px);
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.icons__img {
+    width: rem(41px);
+    height: rem(41px);
+    margin-right: rem(11px);
+}
+
+.icons__text {
+    font-size: rem(16px);
+    max-width: rem(89px);
+    font-family: "Play";
+}

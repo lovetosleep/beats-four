@@ -1,0 +1,7 @@
+.products__item {
+    padding-left: rem(52px);
+  
+    @include tablets {
+      padding-left: 0;
+    }
+  }

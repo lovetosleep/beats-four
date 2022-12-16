@@ -1,0 +1,17 @@
+.order-section {
+    background: url("../img/main/4430b7c5c5f2bc6a5b367211b5907e94.png") 100% no-repeat;
+    position: relative;
+    background-size: cover;
+
+    &:before {
+        position: absolute;
+        top: rem(-26px);
+        right: 28%;
+        content: url("../img/icons/pentagon.png");
+    }
+}
+
+.section__title-order {
+    color: #fff;
+    margin-bottom: rem(30px);
+}

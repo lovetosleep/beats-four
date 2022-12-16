@@ -1,0 +1,12 @@
+.section-reviews {
+    position: relative;
+    background-size: cover;
+
+    &:before {
+        position: absolute;
+        bottom: rem(-26px);
+        left: 24%;
+        content: url("../img/icons/circle.png");
+        z-index: 2;
+    }
+}

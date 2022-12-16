@@ -1,0 +1,39 @@
+.products-slider {
+    position: relative;
+    height: 100%;
+  
+    .bx-wrapper {
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+  
+  .product-slider__arrow {
+    background: url("../img/icons/right.svg") center center no-repeat;
+    background-size: contain;
+    display: block;
+    width: rem(24px);
+    height: rem(40px);
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  
+    &--next {
+      right: 0;
+    }
+  
+    &--back {
+      left: 0;
+      transform: rotate(-180deg);
+    }
+  }
+  
+  
+  
+  .products-slider__icon {
+    width: rem(14px);
+    height: rem(26px);
+    display: block;
+    fill: black;
+  }
